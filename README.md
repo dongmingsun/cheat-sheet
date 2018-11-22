@@ -15,3 +15,8 @@
 ## OpenCV
 type2str
 
+## Ubuntu: switch left_ctrl and left_alt:
+```
+apt-get install dconf-tools
+dconf write "/org/gnome/desktop/input-sources/xkb-options" "['ctrl:swap_lalt_lctl','ctrl:swap_ralt_rctl']"
+```
