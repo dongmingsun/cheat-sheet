@@ -1,4 +1,4 @@
-std::string type2str(cv::Mat img) {
+std::string type2str(const cv::Mat& img) {
   int type = img.type();
   std::string r;
   int depth = type & CV_MAT_DEPTH_MASK;
@@ -32,7 +32,6 @@ std::string type2str(cv::Mat img) {
   }
   r += "C";
   r += (chans + '0');
-  std::cout << r << std::endl;
-
+  
   return r;
 }
